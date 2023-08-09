@@ -1,3 +1,5 @@
+// ignore_for_file: noop_primitive_operations
+
 /*
  *  This file is part of BlackHole (https://github.com/Sangwan5688/BlackHole).
  * 
@@ -361,7 +363,7 @@ class _YouTubeState extends State<YouTube>
                                                       fontSize: 11,
                                                       color: Theme.of(context)
                                                           .textTheme
-                                                          .caption!
+                                                          .bodySmall!
                                                           .color,
                                                     ),
                                                   ),

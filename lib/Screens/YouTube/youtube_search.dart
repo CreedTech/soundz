@@ -366,7 +366,7 @@ class _YouTubeSearchPageState extends State<YouTubeSearchPage> {
                                                                           context,
                                                                         )
                                                                             .textTheme
-                                                                            .caption!
+                                                                            .bodySmall!
                                                                             .color,
                                                                       ),
                                                                     ),
@@ -390,7 +390,7 @@ class _YouTubeSearchPageState extends State<YouTubeSearchPage> {
                                                                           context,
                                                                         )
                                                                             .textTheme
-                                                                            .caption!
+                                                                            .bodySmall!
                                                                             .color,
                                                                       ),
                                                                     ),

@@ -802,7 +802,7 @@ class _HomePageState extends State<HomePage> {
                                                           color:
                                                               Theme.of(context)
                                                                   .textTheme
-                                                                  .caption!
+                                                                  .bodySmall!
                                                                   .color,
                                                           fontWeight:
                                                               FontWeight.normal,

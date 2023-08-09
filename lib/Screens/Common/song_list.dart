@@ -1,3 +1,5 @@
+// ignore_for_file: noop_primitive_operations
+
 /*
  *  This file is part of BlackHole (https://github.com/Sangwan5688/BlackHole).
  * 

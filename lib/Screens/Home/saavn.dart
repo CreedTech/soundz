@@ -343,7 +343,7 @@ class _SaavnHomePageState extends State<SaavnHomePage>
                                                           color:
                                                               Theme.of(context)
                                                                   .textTheme
-                                                                  .caption!
+                                                                  .bodySmall!
                                                                   .color,
                                                         ),
                                                       )
@@ -853,7 +853,7 @@ class _SaavnHomePageState extends State<SaavnHomePage>
                                                         fontSize: 11,
                                                         color: Theme.of(context)
                                                             .textTheme
-                                                            .caption!
+                                                            .bodySmall!
                                                             .color,
                                                       ),
                                                     )

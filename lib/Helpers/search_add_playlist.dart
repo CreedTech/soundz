@@ -95,6 +95,7 @@ class SearchAddPlaylist {
             Uri.parse(response.headers['location'].toString());
         baseClient.close();
         final RegExpMatch? id2 =
+            // ignore: noop_primitive_operations
             RegExp(r'.*?id\=(.*)&').firstMatch('${redirectUri.toString()}&');
         if (id2 != null) {
           final List tracks = await getRessoSongs(playlistId: id2[1]!);
