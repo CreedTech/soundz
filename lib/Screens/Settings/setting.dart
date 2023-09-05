@@ -1,21 +1,4 @@
-/*
- *  This file is part of BlackHole (https://github.com/Sangwan5688/BlackHole).
- * 
- * BlackHole is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Lesser General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * BlackHole is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU Lesser General Public License for more details.
- *
- * You should have received a copy of the GNU Lesser General Public License
- * along with BlackHole.  If not, see <http://www.gnu.org/licenses/>.
- * 
- * Copyright (c) 2021-2022, Ankit Sangwan
- */
+//
 
 import 'dart:io';
 
@@ -120,7 +103,7 @@ class _SettingPageState extends State<SettingPage> {
     defaultValue: ['Like', 'Previous', 'Play/Pause', 'Next', 'Download'],
   ) as List;
   List preferredLanguage = Hive.box('settings')
-      .get('preferredLanguage', defaultValue: ['Hindi'])?.toList() as List;
+      .get('preferredLanguage', defaultValue: ['Ennglish'])?.toList() as List;
   List preferredMiniButtons = Hive.box('settings').get(
     'preferredMiniButtons',
     defaultValue: ['Like', 'Play/Pause', 'Next'],
@@ -3614,7 +3597,7 @@ class _SettingPageState extends State<SettingPage> {
                             Share.share(
                               '${AppLocalizations.of(
                                 context,
-                              )!.shareAppText}: https://github.com/Sangwan5688/BlackHole',
+                              )!.shareAppText}: https://github.com/creedtech/soundz',
                             );
                           },
                           dense: true,
@@ -3636,7 +3619,7 @@ class _SettingPageState extends State<SettingPage> {
                           onTap: () {
                             launchUrl(
                               Uri.parse(
-                                'https://www.buymeacoffee.com/ankitsangwan',
+                                'https://www.buymeacoffee.com/lazyszn',
                               ),
                               mode: LaunchMode.externalApplication,
                             );
@@ -3658,8 +3641,7 @@ class _SettingPageState extends State<SettingPage> {
                           dense: true,
                           isThreeLine: true,
                           onTap: () {
-                            const String upiUrl =
-                                'upi://pay?pa=ankit.sangwan.5688@oksbi&pn=BlackHole';
+                            const String upiUrl = '';
                             launchUrl(
                               Uri.parse(upiUrl),
                               mode: LaunchMode.externalApplication,
@@ -3668,7 +3650,7 @@ class _SettingPageState extends State<SettingPage> {
                           onLongPress: () {
                             copyToClipboard(
                               context: context,
-                              text: 'ankit.sangwan.5688@oksbi',
+                              text: '',
                               displayText: AppLocalizations.of(
                                 context,
                               )!
@@ -3685,7 +3667,7 @@ class _SettingPageState extends State<SettingPage> {
                             onPressed: () {
                               copyToClipboard(
                                 context: context,
-                                text: 'ankit.sangwan.5688@oksbi',
+                                text: '',
                                 displayText: AppLocalizations.of(
                                   context,
                                 )!
@@ -3806,7 +3788,7 @@ class _SettingPageState extends State<SettingPage> {
                                                 Navigator.pop(context);
                                                 launchUrl(
                                                   Uri.parse(
-                                                    'https://instagram.com/sangwan5688',
+                                                    'https://instagram.com/lazyszn',
                                                   ),
                                                   mode: LaunchMode
                                                       .externalApplication,
@@ -4022,9 +4004,9 @@ class BoxSwitchTile extends StatelessWidget {
 class SpotifyCountry {
   Future<String> changeCountry({required BuildContext context}) async {
     String region =
-        Hive.box('settings').get('region', defaultValue: 'India') as String;
+        Hive.box('settings').get('region', defaultValue: 'Nigeria') as String;
     if (!ConstantCodes.localChartCodes.containsKey(region)) {
-      region = 'India';
+      region = 'Nigeria';
     }
 
     await showModalBottomSheet(
