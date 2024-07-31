@@ -1,10 +1,10 @@
 //
 
-import 'package:flutter/cupertino.dart';
+// import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 
-class SearchBar extends StatefulWidget {
+class SearchBarWidget extends StatefulWidget {
   final bool isYt;
   final Widget body;
   final bool autofocus;
@@ -16,7 +16,7 @@ class SearchBar extends StatefulWidget {
   final Function(String)? onQueryChanged;
   final Function()? onQueryCleared;
   final Function(String) onSubmitted;
-  const SearchBar({
+  const SearchBarWidget({
     super.key,
     this.leading,
     this.hintText,
@@ -32,10 +32,10 @@ class SearchBar extends StatefulWidget {
   });
 
   @override
-  State<SearchBar> createState() => _SearchBarState();
+  State<SearchBarWidget> createState() => _SearchBarWidgetState();
 }
 
-class _SearchBarState extends State<SearchBar> {
+class _SearchBarWidgetState extends State<SearchBarWidget> {
   String tempQuery = '';
   String query = '';
   final ValueNotifier<bool> hide = ValueNotifier<bool>(true);
@@ -225,7 +225,7 @@ class _SearchBarState extends State<SearchBar> {
                                   itemBuilder: (context, index) {
                                     return ListTile(
                                       leading:
-                                          const Icon(CupertinoIcons.search),
+                                          const Icon(Icons.search),
                                       title: Text(
                                         suggestedList[index].toString(),
                                         overflow: TextOverflow.ellipsis,

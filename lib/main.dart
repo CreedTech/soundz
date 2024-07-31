@@ -33,7 +33,7 @@ import 'package:receive_sharing_intent/receive_sharing_intent.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  Paint.enableDithering = true;
+  // Paint.enableDithering = true;
 
   if (Platform.isWindows || Platform.isLinux || Platform.isMacOS) {
     await Hive.initFlutter('BlackHole');
