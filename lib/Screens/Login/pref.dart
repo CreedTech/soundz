@@ -1,8 +1,8 @@
 //
 
-import 'package:blackhole/CustomWidgets/gradient_containers.dart';
-import 'package:blackhole/CustomWidgets/snackbar.dart';
-import 'package:blackhole/Helpers/countrycodes.dart';
+import 'package:Soundz/CustomWidgets/gradient_containers.dart';
+import 'package:Soundz/CustomWidgets/snackbar.dart';
+import 'package:Soundz/Helpers/countrycodes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:hive/hive.dart';

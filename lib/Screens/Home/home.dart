@@ -3,22 +3,22 @@
 import 'dart:io';
 import 'dart:math';
 
-import 'package:blackhole/CustomWidgets/custom_physics.dart';
-import 'package:blackhole/CustomWidgets/gradient_containers.dart';
-import 'package:blackhole/CustomWidgets/miniplayer.dart';
-import 'package:blackhole/CustomWidgets/snackbar.dart';
-import 'package:blackhole/CustomWidgets/textinput_dialog.dart';
-import 'package:blackhole/Helpers/backup_restore.dart';
-import 'package:blackhole/Helpers/downloads_checker.dart';
-import 'package:blackhole/Helpers/supabase.dart';
-import 'package:blackhole/Screens/Home/saavn.dart';
-import 'package:blackhole/Screens/Library/library.dart';
-import 'package:blackhole/Screens/LocalMusic/downed_songs.dart';
-import 'package:blackhole/Screens/Search/search.dart';
-import 'package:blackhole/Screens/Settings/setting.dart';
-import 'package:blackhole/Screens/Top Charts/top.dart';
-import 'package:blackhole/Screens/YouTube/youtube_home.dart';
-import 'package:blackhole/Services/ext_storage_provider.dart';
+import 'package:Soundz/CustomWidgets/custom_physics.dart';
+import 'package:Soundz/CustomWidgets/gradient_containers.dart';
+import 'package:Soundz/CustomWidgets/miniplayer.dart';
+import 'package:Soundz/CustomWidgets/snackbar.dart';
+import 'package:Soundz/CustomWidgets/textinput_dialog.dart';
+import 'package:Soundz/Helpers/backup_restore.dart';
+import 'package:Soundz/Helpers/downloads_checker.dart';
+import 'package:Soundz/Helpers/supabase.dart';
+import 'package:Soundz/Screens/Home/saavn.dart';
+import 'package:Soundz/Screens/Library/library.dart';
+import 'package:Soundz/Screens/LocalMusic/downed_songs.dart';
+import 'package:Soundz/Screens/Search/search.dart';
+import 'package:Soundz/Screens/Settings/setting.dart';
+import 'package:Soundz/Screens/Top Charts/top.dart';
+import 'package:Soundz/Screens/YouTube/youtube_home.dart';
+import 'package:Soundz/Services/ext_storage_provider.dart';
 // import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -223,7 +223,7 @@ class _HomePageState extends State<HomePage> {
           ) as String;
           if (autoBackPath == '') {
             ExtStorageProvider.getExtStorage(
-              dirName: 'BlackHole/Backups',
+              dirName: 'Soundz/Backups',
             ).then((value) {
               Hive.box('settings').put('autoBackPath', value);
               createBackup(
@@ -231,7 +231,7 @@ class _HomePageState extends State<HomePage> {
                 checked,
                 boxNames,
                 path: value,
-                fileName: 'BlackHole_AutoBackup',
+                fileName: 'Soundz_AutoBackup',
                 showDialog: false,
               );
             });
@@ -241,7 +241,7 @@ class _HomePageState extends State<HomePage> {
               checked,
               boxNames,
               path: autoBackPath,
-              fileName: 'BlackHole_AutoBackup',
+              fileName: 'Soundz_AutoBackup',
               showDialog: false,
             );
           }
@@ -758,7 +758,7 @@ class _HomePageState extends State<HomePage> {
                                                         offset:
                                                             Offset(1.5, 1.5),
                                                         // shadow direction: bottom right
-                                                      )
+                                                      ),
                                                     ],
                                                   ),
                                                   child: Row(

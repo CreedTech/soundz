@@ -1,12 +1,10 @@
-
-
 import 'package:audio_service/audio_service.dart';
-import 'package:blackhole/CustomWidgets/collage.dart';
-import 'package:blackhole/CustomWidgets/gradient_containers.dart';
-import 'package:blackhole/CustomWidgets/snackbar.dart';
-import 'package:blackhole/CustomWidgets/textinput_dialog.dart';
-import 'package:blackhole/Helpers/audio_query.dart';
-import 'package:blackhole/Helpers/playlist.dart';
+import 'package:Soundz/CustomWidgets/collage.dart';
+import 'package:Soundz/CustomWidgets/gradient_containers.dart';
+import 'package:Soundz/CustomWidgets/snackbar.dart';
+import 'package:Soundz/CustomWidgets/textinput_dialog.dart';
+import 'package:Soundz/Helpers/audio_query.dart';
+import 'package:Soundz/Helpers/playlist.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:hive/hive.dart';

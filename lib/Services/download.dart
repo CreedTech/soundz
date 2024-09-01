@@ -7,9 +7,9 @@ import 'dart:io';
 
 import 'package:audiotagger/audiotagger.dart';
 import 'package:audiotagger/models/tag.dart';
-import 'package:blackhole/CustomWidgets/snackbar.dart';
-import 'package:blackhole/Helpers/lyrics.dart';
-import 'package:blackhole/Services/ext_storage_provider.dart';
+import 'package:Soundz/CustomWidgets/snackbar.dart';
+import 'package:Soundz/Helpers/lyrics.dart';
+import 'package:Soundz/Services/ext_storage_provider.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 // import 'package:flutter_downloader/flutter_downloader.dart';
@@ -433,7 +433,7 @@ class Download with ChangeNotifier {
           genre: data['language'].toString(),
           year: data['year'].toString(),
           lyrics: lyrics,
-          comment: 'BlackHole',
+          comment: 'Soundz',
         );
         if (Platform.isAndroid) {
           try {

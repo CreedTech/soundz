@@ -2,19 +2,19 @@
 
 import 'dart:io';
 
-import 'package:blackhole/APIs/api.dart';
-import 'package:blackhole/CustomWidgets/collage.dart';
-import 'package:blackhole/CustomWidgets/horizontal_albumlist.dart';
-import 'package:blackhole/CustomWidgets/like_button.dart';
-import 'package:blackhole/CustomWidgets/on_hover.dart';
-import 'package:blackhole/CustomWidgets/snackbar.dart';
-import 'package:blackhole/CustomWidgets/song_tile_trailing_menu.dart';
-import 'package:blackhole/Helpers/extensions.dart';
-import 'package:blackhole/Helpers/format.dart';
-import 'package:blackhole/Screens/Common/song_list.dart';
-import 'package:blackhole/Screens/Library/liked.dart';
-import 'package:blackhole/Screens/Search/artists.dart';
-import 'package:blackhole/Services/player_service.dart';
+import 'package:Soundz/APIs/api.dart';
+import 'package:Soundz/CustomWidgets/collage.dart';
+import 'package:Soundz/CustomWidgets/horizontal_albumlist.dart';
+import 'package:Soundz/CustomWidgets/like_button.dart';
+import 'package:Soundz/CustomWidgets/on_hover.dart';
+import 'package:Soundz/CustomWidgets/snackbar.dart';
+import 'package:Soundz/CustomWidgets/song_tile_trailing_menu.dart';
+import 'package:Soundz/Helpers/extensions.dart';
+import 'package:Soundz/Helpers/format.dart';
+import 'package:Soundz/Screens/Common/song_list.dart';
+import 'package:Soundz/Screens/Library/liked.dart';
+import 'package:Soundz/Screens/Search/artists.dart';
+import 'package:Soundz/Services/player_service.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';

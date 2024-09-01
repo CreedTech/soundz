@@ -2,21 +2,21 @@
 
 import 'dart:io';
 
-import 'package:blackhole/CustomWidgets/copy_clipboard.dart';
-import 'package:blackhole/CustomWidgets/gradient_containers.dart';
-import 'package:blackhole/CustomWidgets/popup.dart';
-import 'package:blackhole/CustomWidgets/snackbar.dart';
-import 'package:blackhole/CustomWidgets/textinput_dialog.dart';
-import 'package:blackhole/Helpers/backup_restore.dart';
-import 'package:blackhole/Helpers/config.dart';
-import 'package:blackhole/Helpers/countrycodes.dart';
-import 'package:blackhole/Helpers/picker.dart';
-import 'package:blackhole/Helpers/supabase.dart';
-import 'package:blackhole/Screens/Home/saavn.dart' as home_screen;
-import 'package:blackhole/Screens/Settings/player_gradient.dart';
-import 'package:blackhole/Screens/Top Charts/top.dart' as top_screen;
-import 'package:blackhole/Services/ext_storage_provider.dart';
-import 'package:blackhole/main.dart';
+import 'package:Soundz/CustomWidgets/copy_clipboard.dart';
+import 'package:Soundz/CustomWidgets/gradient_containers.dart';
+import 'package:Soundz/CustomWidgets/popup.dart';
+import 'package:Soundz/CustomWidgets/snackbar.dart';
+import 'package:Soundz/CustomWidgets/textinput_dialog.dart';
+import 'package:Soundz/Helpers/backup_restore.dart';
+import 'package:Soundz/Helpers/config.dart';
+import 'package:Soundz/Helpers/countrycodes.dart';
+import 'package:Soundz/Helpers/picker.dart';
+import 'package:Soundz/Helpers/supabase.dart';
+import 'package:Soundz/Screens/Home/saavn.dart' as home_screen;
+import 'package:Soundz/Screens/Settings/player_gradient.dart';
+import 'package:Soundz/Screens/Top Charts/top.dart' as top_screen;
+import 'package:Soundz/Services/ext_storage_provider.dart';
+import 'package:Soundz/main.dart';
 // import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -44,7 +44,7 @@ class _SettingPageState extends State<SettingPage> {
       .get('downloadPath', defaultValue: '/storage/emulated/0/Music') as String;
   String autoBackPath = Hive.box('settings').get(
     'autoBackPath',
-    defaultValue: '/storage/emulated/0/BlackHole/Backups',
+    defaultValue: '/storage/emulated/0/Soundz/Backups',
   ) as String;
   final ValueNotifier<bool> includeOrExclude = ValueNotifier<bool>(
     Hive.box('settings').get('includeOrExclude', defaultValue: false) as bool,
@@ -72,7 +72,7 @@ class _SettingPageState extends State<SettingPage> {
   Map userThemes =
       Hive.box('settings').get('userThemes', defaultValue: {}) as Map;
   String region =
-      Hive.box('settings').get('region', defaultValue: 'India') as String;
+      Hive.box('settings').get('region', defaultValue: 'Nigeria') as String;
   bool useProxy =
       Hive.box('settings').get('useProxy', defaultValue: false) as bool;
   String themeColor =
@@ -81,8 +81,8 @@ class _SettingPageState extends State<SettingPage> {
   int downFilename =
       Hive.box('settings').get('downFilename', defaultValue: 0) as int;
   List<String> languages = [
-    'Hindi',
     'English',
+    'Hindi',
     'Punjabi',
     'Tamil',
     'Telugu',
@@ -3397,9 +3397,9 @@ class _SettingPageState extends State<SettingPage> {
                             onPressed: () async {
                               autoBackPath =
                                   await ExtStorageProvider.getExtStorage(
-                                        dirName: 'BlackHole/Backups',
+                                        dirName: 'Soundz/Backups',
                                       ) ??
-                                      '/storage/emulated/0/BlackHole/Backups';
+                                      '/storage/emulated/0/Soundz/Backups';
                               Hive.box('settings')
                                   .put('autoBackPath', autoBackPath);
                               setState(
@@ -3726,7 +3726,7 @@ class _SettingPageState extends State<SettingPage> {
                                                 Navigator.pop(context);
                                                 launchUrl(
                                                   Uri.parse(
-                                                    'https://mail.google.com/mail/?extsrc=mailto&url=mailto%3A%3Fto%3Dblackholeyoucantescape%40gmail.com%26subject%3DRegarding%2520Mobile%2520App',
+                                                    'https://mail.google.com/mail/?extsrc=mailto&url=mailto%3A%3Fto%3Dayodeleayoolaoke4%40gmail.com%26subject%3DRegarding%2520Mobile%2520App',
                                                   ),
                                                   mode: LaunchMode
                                                       .externalApplication,
@@ -3882,7 +3882,7 @@ class _SettingPageState extends State<SettingPage> {
                                                 Navigator.pop(context);
                                                 launchUrl(
                                                   Uri.parse(
-                                                    'https://t.me/blackhole_official',
+                                                    'https://t.me/lazy_szn',
                                                   ),
                                                   mode: LaunchMode
                                                       .externalApplication,

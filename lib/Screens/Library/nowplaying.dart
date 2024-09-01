@@ -1,11 +1,11 @@
 //
 
 import 'package:audio_service/audio_service.dart';
-import 'package:blackhole/CustomWidgets/bouncy_sliver_scroll_view.dart';
-import 'package:blackhole/CustomWidgets/empty_screen.dart';
-import 'package:blackhole/CustomWidgets/gradient_containers.dart';
-import 'package:blackhole/CustomWidgets/miniplayer.dart';
-import 'package:blackhole/Screens/Player/audioplayer.dart';
+import 'package:Soundz/CustomWidgets/bouncy_sliver_scroll_view.dart';
+import 'package:Soundz/CustomWidgets/empty_screen.dart';
+import 'package:Soundz/CustomWidgets/gradient_containers.dart';
+import 'package:Soundz/CustomWidgets/miniplayer.dart';
+import 'package:Soundz/Screens/Player/audioplayer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:get_it/get_it.dart';

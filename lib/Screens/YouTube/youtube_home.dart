@@ -2,11 +2,11 @@
 
 //
 
-import 'package:blackhole/CustomWidgets/on_hover.dart';
-import 'package:blackhole/CustomWidgets/search_bar.dart';
-import 'package:blackhole/Screens/YouTube/youtube_playlist.dart';
-import 'package:blackhole/Screens/YouTube/youtube_search.dart';
-import 'package:blackhole/Services/youtube_services.dart';
+import 'package:Soundz/CustomWidgets/on_hover.dart';
+import 'package:Soundz/CustomWidgets/search_bar.dart';
+import 'package:Soundz/Screens/YouTube/youtube_playlist.dart';
+import 'package:Soundz/Screens/YouTube/youtube_search.dart';
+import 'package:Soundz/Services/youtube_services.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';

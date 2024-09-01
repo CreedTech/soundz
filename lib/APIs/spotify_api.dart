@@ -1,5 +1,3 @@
-
-
 import 'dart:async';
 import 'dart:convert';
 
@@ -17,7 +15,7 @@ class SpotifyApi {
   /// You can signup for spotify developer account and get your own clientID and clientSecret incase you don't want to use these
   final String clientID = 'a0278ae025b542479105086396adf08a';
   final String clientSecret = 'f422d6eb16ab43359a009894d11b7b45';
-  final String redirectUrl = 'app://blackhole/setting';
+  final String redirectUrl = 'app://Soundz/auth';
   final String spotifyApiUrl = 'https://accounts.spotify.com/api';
   final String spotifyApiBaseUrl = 'https://api.spotify.com/v1';
   final String spotifyUserPlaylistEndpoint = '/me/playlists';
@@ -27,11 +25,18 @@ class SpotifyApi {
   final String spotifyBaseUrl = 'https://accounts.spotify.com';
   final String requestToken = 'https://accounts.spotify.com/api/token';
 
-  String requestAuthorization() =>
-      'https://accounts.spotify.com/authorize?client_id=$clientID&response_type=code&redirect_uri=$redirectUrl&scope=${_scopes.join('%20')}';
+  String requestAuthorization() {
+    print(
+        'https://accounts.spotify.com/authorize?client_id=');
+    final String scope = _scopes.join('%20');
+    return 'https://accounts.spotify.com/authorize?client_id=$clientID&response_type=code&redirect_uri=$redirectUrl&scope=$scope';
+  }
+  // String requestAuthorization() =>
+  //     'https://accounts.spotify.com/authorize?client_id=$clientID&response_type=code&redirect_uri=$redirectUrl&scope=${_scopes.join('%20')}';
   // Future<String> authenticate() async {
   //   final url = SpotifyApi().requestAuthorization();
   //   final callbackUrlScheme = 'accounts.spotify.com';
+  // https://accounts.spotify.com/authorize?client_id=$a0278ae025b542479105086396adf08a&response_type=code&redirect_uri=$app://Soundz/auth&scope=
 
   //   try {
   //     final result = await FlutterWebAuth.authenticate(
@@ -99,7 +104,7 @@ class SpotifyApi {
         path,
         headers: {
           'Authorization': 'Bearer $accessToken',
-          'Accept': 'application/json'
+          'Accept': 'application/json',
         },
       );
       if (response.statusCode == 200) {

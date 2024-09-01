@@ -1,5 +1,5 @@
-import 'package:blackhole/CustomWidgets/copy_clipboard.dart';
-import 'package:blackhole/CustomWidgets/gradient_containers.dart';
+import 'package:Soundz/CustomWidgets/copy_clipboard.dart';
+import 'package:Soundz/CustomWidgets/gradient_containers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:package_info_plus/package_info_plus.dart';
@@ -166,8 +166,7 @@ class _AboutScreenState extends State<AboutScreen> {
                         foregroundColor: Colors.transparent,
                       ),
                       onPressed: () {
-                        const String upiUrl =
-                            '';
+                        const String upiUrl = '';
                         launchUrl(
                           Uri.parse(upiUrl),
                           mode: LaunchMode.externalApplication,

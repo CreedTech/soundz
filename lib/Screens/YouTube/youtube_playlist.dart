@@ -1,12 +1,12 @@
 //
 
-import 'package:blackhole/CustomWidgets/bouncy_playlist_header_scroll_view.dart';
-import 'package:blackhole/CustomWidgets/copy_clipboard.dart';
-import 'package:blackhole/CustomWidgets/gradient_containers.dart';
-import 'package:blackhole/CustomWidgets/miniplayer.dart';
-import 'package:blackhole/CustomWidgets/song_tile_trailing_menu.dart';
-import 'package:blackhole/Services/player_service.dart';
-import 'package:blackhole/Services/youtube_services.dart';
+import 'package:Soundz/CustomWidgets/bouncy_playlist_header_scroll_view.dart';
+import 'package:Soundz/CustomWidgets/copy_clipboard.dart';
+import 'package:Soundz/CustomWidgets/gradient_containers.dart';
+import 'package:Soundz/CustomWidgets/miniplayer.dart';
+import 'package:Soundz/CustomWidgets/song_tile_trailing_menu.dart';
+import 'package:Soundz/Services/player_service.dart';
+import 'package:Soundz/Services/youtube_services.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';

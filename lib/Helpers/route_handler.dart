@@ -1,10 +1,10 @@
 //
 
-import 'package:blackhole/APIs/api.dart';
-import 'package:blackhole/Helpers/audio_query.dart';
-import 'package:blackhole/Screens/Common/song_list.dart';
-import 'package:blackhole/Screens/Player/audioplayer.dart';
-import 'package:blackhole/Services/player_service.dart';
+import 'package:Soundz/APIs/api.dart';
+import 'package:Soundz/Helpers/audio_query.dart';
+import 'package:Soundz/Screens/Common/song_list.dart';
+import 'package:Soundz/Screens/Player/audioplayer.dart';
+import 'package:Soundz/Services/player_service.dart';
 import 'package:flutter/material.dart';
 import 'package:on_audio_query/on_audio_query.dart';
 

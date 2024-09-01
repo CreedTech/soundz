@@ -32,7 +32,7 @@ class ExtStorageProvider {
 
           // getting main path
           final String newPath = directory!.path
-              .replaceFirst('Android/data/com.shadow.blackhole/files', dirName);
+              .replaceFirst('Android/data/com.lazy.soundz/files', dirName);
 
           directory = Directory(newPath);
 

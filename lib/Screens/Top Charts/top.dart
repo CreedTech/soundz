@@ -1,13 +1,13 @@
 //
 
 import 'package:app_links/app_links.dart';
-import 'package:blackhole/APIs/spotify_api.dart';
-import 'package:blackhole/CustomWidgets/custom_physics.dart';
-import 'package:blackhole/CustomWidgets/empty_screen.dart';
-import 'package:blackhole/Helpers/countrycodes.dart';
-// import 'package:blackhole/Helpers/countrycodes.dart';
-import 'package:blackhole/Screens/Search/search.dart';
-import 'package:blackhole/Screens/Settings/setting.dart';
+import 'package:Soundz/APIs/spotify_api.dart';
+import 'package:Soundz/CustomWidgets/custom_physics.dart';
+import 'package:Soundz/CustomWidgets/empty_screen.dart';
+import 'package:Soundz/Helpers/countrycodes.dart';
+// import 'package:Soundz/Helpers/countrycodes.dart';
+import 'package:Soundz/Screens/Search/search.dart';
+import 'package:Soundz/Screens/Settings/setting.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -149,7 +149,7 @@ Future<List> getChartDetails(String accessToken, String type) async {
   final String globalPlaylistId = ConstantCodes.localChartCodes['Global']!;
   final String localPlaylistId = ConstantCodes.localChartCodes.containsKey(type)
       ? ConstantCodes.localChartCodes[type]!
-      : ConstantCodes.localChartCodes['India']!;
+      : ConstantCodes.localChartCodes['Nigeria']!;
   final String playlistId =
       type == 'Global' ? globalPlaylistId : localPlaylistId;
   final List data = [];
@@ -188,6 +188,9 @@ Future<void> scrapData(String type, {bool signIn = false}) async {
   }
 
   if (accessToken == 'null' || refreshToken == 'null') {
+    print('accesstoken is null so...');
+    final authUrl = SpotifyApi().requestAuthorization();
+    print('Authorization URL: $authUrl');
     launchUrl(
       Uri.parse(
         SpotifyApi().requestAuthorization(),
@@ -338,9 +341,9 @@ class _TopPageState extends State<TopPage>
                         'Service Unavailable',
                         20,
                       )
-                    : Column(
+                    : const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
+                        children: [
                           CircularProgressIndicator(),
                         ],
                       ),

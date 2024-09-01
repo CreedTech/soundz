@@ -1,18 +1,18 @@
 //
 
-import 'package:blackhole/CustomWidgets/collage.dart';
-import 'package:blackhole/CustomWidgets/custom_physics.dart';
-import 'package:blackhole/CustomWidgets/data_search.dart';
-import 'package:blackhole/CustomWidgets/download_button.dart';
-import 'package:blackhole/CustomWidgets/empty_screen.dart';
-import 'package:blackhole/CustomWidgets/gradient_containers.dart';
-import 'package:blackhole/CustomWidgets/like_button.dart';
-import 'package:blackhole/CustomWidgets/miniplayer.dart';
-import 'package:blackhole/CustomWidgets/playlist_head.dart';
-import 'package:blackhole/CustomWidgets/song_tile_trailing_menu.dart';
-import 'package:blackhole/Helpers/songs_count.dart' as songs_count;
-import 'package:blackhole/Screens/Library/show_songs.dart';
-import 'package:blackhole/Services/player_service.dart';
+import 'package:Soundz/CustomWidgets/collage.dart';
+import 'package:Soundz/CustomWidgets/custom_physics.dart';
+import 'package:Soundz/CustomWidgets/data_search.dart';
+import 'package:Soundz/CustomWidgets/download_button.dart';
+import 'package:Soundz/CustomWidgets/empty_screen.dart';
+import 'package:Soundz/CustomWidgets/gradient_containers.dart';
+import 'package:Soundz/CustomWidgets/like_button.dart';
+import 'package:Soundz/CustomWidgets/miniplayer.dart';
+import 'package:Soundz/CustomWidgets/playlist_head.dart';
+import 'package:Soundz/CustomWidgets/song_tile_trailing_menu.dart';
+import 'package:Soundz/Helpers/songs_count.dart' as songs_count;
+import 'package:Soundz/Screens/Library/show_songs.dart';
+import 'package:Soundz/Services/player_service.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

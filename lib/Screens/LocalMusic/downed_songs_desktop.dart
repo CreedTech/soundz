@@ -3,17 +3,17 @@
 import 'dart:developer';
 import 'dart:io';
 
-// import 'package:blackhole/CustomWidgets/add_playlist.dart';
-import 'package:blackhole/CustomWidgets/custom_physics.dart';
-// import 'package:blackhole/CustomWidgets/data_search.dart';
-import 'package:blackhole/CustomWidgets/empty_screen.dart';
-import 'package:blackhole/CustomWidgets/gradient_containers.dart';
-import 'package:blackhole/CustomWidgets/miniplayer.dart';
-import 'package:blackhole/CustomWidgets/playlist_head.dart';
-// import 'package:blackhole/CustomWidgets/snackbar.dart';
-import 'package:blackhole/Helpers/audio_query.dart';
-// import 'package:blackhole/Screens/LocalMusic/localplaylists.dart';
-import 'package:blackhole/Services/player_service.dart';
+// import 'package:Soundz/CustomWidgets/add_playlist.dart';
+import 'package:Soundz/CustomWidgets/custom_physics.dart';
+// import 'package:Soundz/CustomWidgets/data_search.dart';
+import 'package:Soundz/CustomWidgets/empty_screen.dart';
+import 'package:Soundz/CustomWidgets/gradient_containers.dart';
+import 'package:Soundz/CustomWidgets/miniplayer.dart';
+import 'package:Soundz/CustomWidgets/playlist_head.dart';
+// import 'package:Soundz/CustomWidgets/snackbar.dart';
+import 'package:Soundz/Helpers/audio_query.dart';
+// import 'package:Soundz/Screens/LocalMusic/localplaylists.dart';
+import 'package:Soundz/Services/player_service.dart';
 // import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
